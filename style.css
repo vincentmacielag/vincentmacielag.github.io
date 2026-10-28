@@ -188,7 +188,7 @@ a.media:hover img { transform: scale(1.03); }
 .card:hover { border-color: color-mix(in srgb, var(--accent) 45%, var(--rule)); transform: translateY(-2px); }
 .card h3 { font-family: var(--display); font-stretch: 108%; font-weight: 700; font-size: 21px; line-height: 1.2; margin: 8px 0 10px; }
 .card p { margin: 0; color: var(--ink); }
-.skills { display: grid; grid-template-columns: repeat(4, 1fr); gap: 28px; }
+.skills { display: grid; grid-template-columns: repeat(3, 1fr); gap: 30px 36px; }
 .skills h4 { margin: 0 0 8px; font-family: var(--mono); font-size: 12px; font-weight: 500; letter-spacing: .09em; text-transform: uppercase; color: var(--accent); }
 .skills p { margin: 0; font-size: 15.5px; color: var(--ink); }
 
