@@ -1,4 +1,4 @@
-// Scroll reveals, dimension lines, sticky nav border, image viewer.
+// Scroll reveals, dimension lines, sticky nav border, theme toggle, image viewer.
 (() => {
   const reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -23,6 +23,25 @@
   const onScroll = () => nav.classList.toggle("scrolled", window.scrollY > 8);
   onScroll();
   window.addEventListener("scroll", onScroll, { passive: true });
+
+  // Light/dark toggle. Follows the device until the visitor picks one, then remembers it.
+  const root = document.documentElement;
+  const toggle = document.getElementById("theme-toggle");
+  const deviceDark = window.matchMedia("(prefers-color-scheme: dark)");
+  const current = () => root.dataset.theme || (deviceDark.matches ? "dark" : "light");
+  const sync = () => {
+    const label = current() === "dark" ? "Switch to light theme" : "Switch to dark theme";
+    toggle.dataset.state = current();
+    toggle.setAttribute("aria-label", label);
+    toggle.title = label;
+  };
+  sync();
+  deviceDark.addEventListener("change", sync);
+  toggle.addEventListener("click", () => {
+    root.dataset.theme = current() === "dark" ? "light" : "dark";
+    try { localStorage.setItem("theme", root.dataset.theme); } catch (e) {}
+    sync();
+  });
 
   // Image viewer.
   const lb = document.getElementById("lightbox");
