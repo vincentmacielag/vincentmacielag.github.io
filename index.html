@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vincent Macielag | Mechanical Engineering</title>
+<meta name="description" content="Vincent Macielag, mechanical engineering student (aerospace concentration) at the University of Delaware. Design, machining and test projects.">
+<meta property="og:title" content="Vincent Macielag | Mechanical Engineering">
+<meta property="og:description" content="Design, machining and test projects: a desktop CNC lathe, Formula SAE aero, and parts in daily use in the UD machine shop.">
+<meta property="og:image" content="https://vincentmacielag.github.io/assets/v1_front.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@100..125,400..800&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+</head>
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#top">V. Macielag</a>
+    <nav aria-label="Sections">
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<section class="hero wrap">
+  <p class="label reveal">Mechanical Engineering &middot; Aerospace Concentration &middot; University of Delaware</p>
+  <div class="name-block reveal">
+    <h1>Vincent Macielag</h1>
+    <div class="dim" data-dim aria-hidden="true"><span class="tick l"></span><span class="tick r"></span><span class="arrow l"></span><span class="arrow r"></span><span class="line"></span><span class="val">Class of December 2028</span></div>
+  </div>
+  <p class="lede reveal">I design parts around how they get made and tested: machined in the shop, 3D printed, or molded in carbon fiber. I'm looking for summer 2027 internships and co-ops in aero design, propulsion and flight controls, and defense design work in general.</p>
+  <ul class="facts label reveal">
+    <li>U.S. citizen</li>
+    <li>Formula SAE aero team</li>
+    <li>Machine shop TA</li>
+  </ul>
+  <div class="cta reveal">
+    <a class="btn" href="mailto:vincentm1321@icloud.com">Email me <span class="arr" aria-hidden="true">&rarr;</span></a>
+    <a class="btn ghost" href="https://www.linkedin.com/in/vincent-macielag-5a9322332" target="_blank" rel="noopener">LinkedIn</a>
+  </div>
+</section>
+
+<section id="projects" class="wrap">
+  <div class="section-head reveal">
+    <p class="label">Selected work</p>
+    <h2>Projects</h2>
+    <div class="dim" data-dim aria-hidden="true"><span class="tick l"></span><span class="tick r"></span><span class="arrow l"></span><span class="arrow r"></span><span class="line"></span><span class="val">5 projects</span></div>
+  </div>
+
+  <!-- Desktop CNC lathe -->
+  <article class="project">
+    <div class="media feature-video reveal">
+      <video src="assets/lathe_v1_motion.mp4" poster="assets/lathe_v1_motion_poster.jpg" autoplay muted loop playsinline aria-label="Motion study of lathe v1 facing and turning 1 inch bar stock"></video>
+    </div>
+    <p class="label caption">v1 motion study: facing and turning 1" bar stock</p>
+    <div class="feature-grid">
+      <div class="reveal">
+        <p class="label">Personal project &middot; Design complete, build starting</p>
+        <h3>Desktop CNC Lathe</h3>
+        <p>A small CNC lathe I designed from scratch in SolidWorks to take real cuts in steel for about $1,000. The mini lathes that fit the budget have about 2" of swing over the cross slide, converting one to CNC costs as much as building my own, and nobody sells a ready made conversion kit for them anymore. So I designed one.</p>
+        <ul class="points">
+          <li><b>A bed without machining one.</b> A self leveling epoxy deck is poured across a steel tube base. The linear rails and a Sieg C2 headstock sit on that pour, so they come out coplanar.</li>
+          <li><b>Decisions from the math.</b> Radial stiffness and motor torque set nearly every choice. Going from one bearing block per rail to two cut the estimated tool deflection at the cross slide from about 30&nbsp;&micro;m to about 2&nbsp;&micro;m, for $15 to $30.</li>
+          <li><b>Staged build.</b> v0.5 runs NEMA 17 steppers and a 3/4 hp three phase spindle motor on a VFD. v1 swaps in NEMA 23s on the same frame, so the upgrade is a swap, not a rebuild.</li>
+          <li><b>Checked before cutting metal.</b> The fully mated assembly drives both slides and the spindle through their full travel against the real hard stops, with interference checks at every corner.</li>
+        </ul>
+      </div>
+      <dl class="spec reveal">
+        <div><dt>Target</dt><dd>0.050" off the diameter of mild steel in one pass, light cuts in stainless</dd></div>
+        <div><dt>Budget</dt><dd>About $1,000</dd></div>
+        <div><dt>Model</dt><dd>120+ part SolidWorks assembly</dd></div>
+        <div><dt>Drawings</dt><dd>42 part shop packet, dimensioned from each setup's zero</dd></div>
+        <div><dt>Travel</dt><dd>4.2" on the cross slide, verified in the mated model</dd></div>
+        <div><dt>Status</dt><dd>Design complete, build starting fall 2026</dd></div>
+      </dl>
+    </div>
+    <p class="label thumbs-head">v1</p>
+    <div class="thumbs reveal">
+      <a class="media" href="assets/v1_front.jpg" data-lightbox><img src="assets/v1_front.jpg" alt="Lathe v1, front isometric render" loading="lazy"></a>
+      <a class="media" href="assets/v1_rear.jpg" data-lightbox><img src="assets/v1_rear.jpg" alt="Lathe v1, rear isometric render" loading="lazy"></a>
+      <a class="media" href="assets/v1_turning.jpg" data-lightbox><img src="assets/v1_turning.jpg" alt="Lathe v1 close up, turning 1 inch stock" loading="lazy"></a>
+      <a class="media" href="assets/v1_chuck_tooling.jpg" data-lightbox><img src="assets/v1_chuck_tooling.jpg" alt="Lathe v1 close up of the chuck and gang tooling" loading="lazy"></a>
+    </div>
+    <p class="label thumbs-head">v0.5 and its shop drawings</p>
+    <div class="thumbs reveal">
+      <a class="media" href="assets/v05_front.jpg" data-lightbox><img src="assets/v05_front.jpg" alt="Lathe v0.5, front isometric render" loading="lazy"></a>
+      <a class="media" href="assets/v05_rear.jpg" data-lightbox><img src="assets/v05_rear.jpg" alt="Lathe v0.5, rear isometric render" loading="lazy"></a>
+      <a class="media" href="assets/lathe_drawing_assembly.jpg" data-lightbox><img src="assets/lathe_drawing_assembly.jpg" data-fit="contain" alt="Assembly sheet from the shop drawing packet" loading="lazy"></a>
+      <a class="media" href="assets/lathe_drawing_flange.jpg" data-lightbox><img src="assets/lathe_drawing_flange.jpg" data-fit="contain" alt="Foot flange part drawing with hole table" loading="lazy"></a>
+    </div>
+  </article>
+
+  <!-- FSAE -->
+  <article class="project split">
+    <div class="statement reveal">
+      <p class="big">Designed for carbon fiber molding. Proven at drive days.</p>
+      <p class="label">UD Formula SAE &middot; 2027 car</p>
+    </div>
+    <div class="reveal">
+      <p class="label">University of Delaware Formula SAE &middot; Aero team &middot; 2026 to present</p>
+      <h3>Formula SAE Aerodynamics</h3>
+      <p>I'm on the aero team for UD's Formula SAE car, helping design, manufacture and test the aerodynamic components for the 2027 car. The whole car lives in one shared drive, with every part, the subsystem assemblies, test assemblies and the full car assembly, and we work across all of it.</p>
+      <ul class="points">
+        <li><b>Designed to the process.</b> The parts have to be designed for carbon fiber composite manufacturing: resin transfer molding in matched die molds or, more often, injection compression molding, which is new for the team this year. At UD, Formula SAE can count as the senior design project, so I'm learning alongside the senior aero team leads while helping with the design, manufacturing, adjustments and redesigns.</li>
+        <li><b>Validating it for real.</b> I'm building a scale test bed version of the car carrying our actual aero designs, so we can test them in a real wind tunnel and see how the designs and the CFD hold up in the real world.</li>
+        <li><b>Tested until it fails or it's proven.</b> At our near weekly drive days, everything that's been designed, changed, added or removed gets tested until it fails or we have hours of data to validate it. I helped manufacture new tie rods that went through that testing.</li>
+      </ul>
+    </div>
+  </article>
+
+  <!-- Lathe soft jaws -->
+  <article class="project split flip">
+    <div class="grid2 reveal">
+      <a class="media" href="assets/jaw_machining.jpg" data-lightbox><img src="assets/jaw_machining.jpg" alt="Machining a soft jaw in a vise" loading="lazy"></a>
+      <a class="media" href="assets/jaw_finished.jpg" data-lightbox><img src="assets/jaw_finished.jpg" alt="Finished aluminum soft jaw" loading="lazy"></a>
+      <a class="media" href="assets/jaw_drawing.jpg" data-lightbox><img src="assets/jaw_drawing.jpg" data-fit="contain" alt="Lathe soft jaw drawing, approved by the shop's master machinist" loading="lazy"></a>
+      <a class="media" href="assets/jaw_installed.jpg" data-lightbox><img src="assets/jaw_installed.jpg" alt="Jaws installed on the shop lathe chuck" loading="lazy"></a>
+    </div>
+    <div class="reveal">
+      <p class="label">UD machine shop &middot; Fall 2026 &middot; In use</p>
+      <h3>Aluminum Lathe Soft Jaws</h3>
+      <p>I reverse engineered these from an older set of jaws, then drew, machined and installed them on the shop's lathe chuck. The full set is in use on the shop lathe for extra wide parts.</p>
+      <ul class="points">
+        <li><b>A real fit problem.</b> The chuck's hardened steel interface measures .4999". Steel jaws press fit at exactly .500", but that doesn't work once one side is softer aluminum. I measured it, checked with the shop's master machinist, and revised the key on the drawing of record to .490", nominal and still tight enough to lock in place.</li>
+        <li><b>Dimensioned for the setup.</b> The part is machined upside down, so every dimension is called from the corner that's X/Y zero in that orientation. The operator reads coordinates straight off the print instead of chaining dimensions and stacking up error.</li>
+      </ul>
+      <dl class="spec">
+        <div><dt>Material</dt><dd>Aluminum</dd></div>
+        <div><dt>Key</dt><dd>.500" revised to .490" after first article fit</dd></div>
+        <div><dt>Approved by</dt><dd>The shop's master machinist</dd></div>
+      </dl>
+    </div>
+  </article>
+
+  <!-- Mighty Mower -->
+  <article class="project split">
+    <div class="grid2 tall reveal">
+      <a class="media" href="assets/mower_assembly.jpg" data-lightbox><img src="assets/mower_assembly.jpg" alt="Mighty Mower assembly drawing" loading="lazy"></a>
+      <a class="media" href="assets/mower_exploded.jpg" data-lightbox><img src="assets/mower_exploded.jpg" alt="Mighty Mower exploded view" loading="lazy"></a>
+    </div>
+    <div class="reveal">
+      <p class="label">Melissa &amp; Doug sponsored project &middot; UD &middot; Spring 2026</p>
+      <h3>The Mighty Mower</h3>
+      <p>A working push mower toy for kids: a motor driven blade that actually picks things up into a catch tray. It had to meet the sponsor's requirements, the course requirements, and the toy safety standards ASTM F963 and ISO 8124. Fitting a functional design inside all three was the real challenge. I carried the CAD, electronics and firmware for the team.</p>
+      <ul class="points">
+        <li><b>Process and material, part by part.</b> Laser cut MDF for the body, wood for the wheels and handles, and 3D printed PETG for the mounts and catch tray.</li>
+        <li><b>A blade that can't hurt a kid.</b> The blade is printed in nylon filament. At a few millimeters thick it's flexible enough to give way if a kid's finger gets in there instead of cutting, and the motor has so little torque that it stalls first anyway.</li>
+        <li><b>Electronics.</b> Arduino Mega, a DC motor on an L9110 driver, a DFPlayer audio module, and an LED and button.</li>
+      </ul>
+      <dl class="spec">
+        <div><dt>Standards</dt><dd>ASTM F963, ISO 8124</dd></div>
+        <div><dt>Drawings</dt><dd>20 sheets, all drawn by me. 19 unique parts, 42 pieces</dd></div>
+        <div><dt>Shown at</dt><dd>UD College of Engineering Design Showcase</dd></div>
+      </dl>
+    </div>
+  </article>
+
+  <!-- Turret -->
+  <article class="project split flip minor">
+    <div class="media reveal"><img src="assets/turret_rig.jpg" alt="Render of the elevation axis test rig" loading="lazy"></div>
+    <div class="reveal">
+      <p class="label">Personal project &middot; In progress</p>
+      <h3>Two Axis Pan and Tilt Mechanism</h3>
+      <p>A two axis turret I'm designing. Both axes use the same motor, pinion, gear ratio and center distance, so there's one drive module to design and test, and the prototype mirrors the final layout so scaling up is a parts swap, not a redesign. Printed parts carry the geometry and steel carries the loads.</p>
+      <p>On the bench I got first motion on a NEMA 17 and traced a shudder in place fault to a motor cable whose pinout didn't match the driver.</p>
+    </div>
+  </article>
+</section>
+
+<section id="why" class="wrap">
+  <div class="section-head reveal">
+    <p class="label">Motivation</p>
+    <h2>Why defense</h2>
+    <div class="dim" data-dim aria-hidden="true"><span class="tick l"></span><span class="tick r"></span><span class="arrow l"></span><span class="arrow r"></span><span class="line"></span><span class="val">Field faster, build more</span></div>
+  </div>
+  <div class="why reveal">
+    <p>Growing up, I went to airshows every summer, and watching the F-22 fly made me think we had to be years ahead of everyone. It looked like something from the future. I still love that kind of engineering, but being the most advanced no longer buys the edge it used to. Cheap drones, loitering munitions and missiles fielded by the thousands can overwhelm a handful of exquisite systems, and AI and hypersonics are changing combat as much as tanks and machine guns once did.</p>
+    <p>I think that means designing differently: systems that can be fielded much faster, built at real volume, and made for specific problems instead of one platform stretched to cover everything at a production rate of a few a year. It takes engineers who understand how things get made and tested, not just how they're designed, and it takes building them here again.</p>
+    <p class="why-close">That's the work I want to do: making sure the men and women who serve always have the edge over our adversaries.</p>
+  </div>
+</section>
+
+<section id="experience" class="wrap">
+  <div class="section-head reveal">
+    <p class="label">Work</p>
+    <h2>Experience</h2>
+    <div class="dim" data-dim aria-hidden="true"><span class="tick l"></span><span class="tick r"></span><span class="arrow l"></span><span class="arrow r"></span><span class="line"></span><span class="val">2023 to present</span></div>
+  </div>
+  <div class="cards">
+    <div class="card reveal">
+      <p class="label">University of Delaware &middot; Aug 2026 to present</p>
+      <h3>Design Studio and Machine Shop Teaching Assistant</h3>
+      <p>Our mechanical engineering lab is essentially a small production and prototyping shop. I run the CNC mills, lathes and laser cutters, and plan, program and machine part orders for coursework, the Formula SAE team and other groups. I teach the basic CNC mills to the roughly 150 students in MEEG210 Statics, advise students on design and manufacturing feasibility, and help senior design teams plan and validate their designs.</p>
+    </div>
+    <div class="card reveal">
+      <p class="label">Ace Pools, Wilmington DE &middot; 2023 to present</p>
+      <h3>Pool Service Technician</h3>
+      <p>Root cause work on pump, motor and control systems: every failure gets traced to an electrical or a mechanical cause before anything is replaced. I also help plan larger system layouts and choose where sensors go to keep downtime low.</p>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="wrap">
+  <div class="section-head reveal">
+    <p class="label">Tools</p>
+    <h2>Skills</h2>
+    <div class="dim" data-dim aria-hidden="true"><span class="tick l"></span><span class="tick r"></span><span class="arrow l"></span><span class="arrow r"></span><span class="line"></span><span class="val">Design, make, measure</span></div>
+  </div>
+  <div class="skills reveal">
+    <div><h4>Design</h4><p>SolidWorks, SolidWorks Simulation (FEA), Fusion 360, AutoCAD, engineering drawings, GD&amp;T, tolerance stack ups, design for manufacturing</p></div>
+    <div><h4>Manufacturing</h4><p>CNC mills and lathes, manual mills, Mastercam, SolidCAM, G-code, laser cutting, 3D printing, sheet metal, waterjet and plasma cutting</p></div>
+    <div><h4>Measurement and test</h4><p>Calipers, micrometers, dial indicators, edge finders, multimeters, drive day testing and data review</p></div>
+    <div><h4>Software</h4><p>Python, Arduino, LabVIEW, Excel, Git. Learning ANSYS and MATLAB now.</p></div>
+  </div>
+</section>
+
+<section id="contact" class="wrap">
+  <div class="section-head reveal">
+    <p class="label">Get in touch</p>
+    <h2>Contact</h2>
+  </div>
+  <div class="titleblock reveal">
+    <div class="tb-row full tb-title"><div class="tb-cell"><span class="label">Project</span><span class="v">Summer 2027 internship or co-op</span></div></div>
+    <div class="tb-row">
+      <div class="tb-cell"><span class="label">Drawn by</span><span class="v">Vincent Macielag</span></div>
+      <div class="tb-cell"><span class="label">Discipline</span><span class="v">Mechanical Engineering, Aerospace Concentration</span></div>
+    </div>
+    <div class="tb-row">
+      <div class="tb-cell"><span class="label">School</span><span class="v">University of Delaware, December 2028</span></div>
+      <div class="tb-cell"><span class="label">Status</span><span class="v">U.S. citizen</span></div>
+    </div>
+    <div class="tb-row">
+      <div class="tb-cell"><span class="label">Email</span><span class="v"><a href="mailto:vincentm1321@icloud.com">vincentm1321@icloud.com</a></span></div>
+      <div class="tb-cell"><span class="label">LinkedIn</span><span class="v"><a href="https://www.linkedin.com/in/vincent-macielag-5a9322332" target="_blank" rel="noopener">vincent-macielag</a></span></div>
+    </div>
+    <div class="tb-row full">
+      <div class="tb-cell">
+        <span class="label">Approved by</span>
+        <div class="approve">
+          <div class="sigline"><span>Your signature here</span></div>
+          <a class="btn" href="mailto:vincentm1321@icloud.com">Email me <span class="arr" aria-hidden="true">&rarr;</span></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="wrap foot"><span>&copy; 2026 Vincent Macielag</span><span class="label">Third angle projection &middot; Do not scale drawing</span></footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer"><button type="button" id="lb-close">Close</button><img alt=""></div>
+<script src="main.js" defer></script>
+</body>
+</html>
